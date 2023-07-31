@@ -334,7 +334,9 @@ export const Bot = (props: BotProps & { class?: string }) => {
                         onSubmit={handleSubmit}
                     />
                 </div>
-                <Badge badgeBackgroundColor={props.badgeBackgroundColor} poweredByTextColor={props.poweredByTextColor} botContainer={botContainer} />
+                    <div style="text-align:center; padding:10px;">
+                        Powered by <a href="https://easifytechnologies.com/" target="_blank">Easify Technologies</a>
+                    </div>
                 <BottomSpacer ref={bottomSpacer} />
             </div>
             {sourcePopupOpen() && <Popup isOpen={sourcePopupOpen()} value={sourcePopupSrc()} onClose={() => setSourcePopupOpen(false)}/>}
